@@ -1,0 +1,14 @@
+.tooling/
+.reference/
+dist/
+.team/
+__pycache__/
+
+# Runtime configuration and credentials must stay local.
+/config.yaml
+.env
+.env.*
+!.env.example
+*.log
+state.json
+state.json.lock

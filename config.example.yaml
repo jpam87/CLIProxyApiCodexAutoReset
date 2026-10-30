@@ -1,0 +1,15 @@
+# Merge into the CLIProxyAPI configuration.
+plugins:
+  enabled: true
+  dir: plugins
+  configs:
+    codex-autoreset:
+      enabled: true
+      dry_run: false
+      minutes_before_expiry: 10
+      poll_seconds: 15
+      request_timeout_seconds: 30
+      # Absolute path, writable by the CLIProxyAPI service user.
+      state_file: /absolute/path/writable-by-cliproxyapi/codex-autoreset/state.json
+      # Empty selects every enabled Codex account. Otherwise use auth_index values.
+      accounts: []
